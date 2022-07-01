@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Descubriendo: Flex Box, Listas y enlaces en HTML
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Temas
+                <ul>
+                    <li>Flex Box</li>
+                    <li>Listas y enlaces en HTML</li>
+                </ul>
+            </li>
+            <li>Recursos
+                <ul>
+                    <li>Recursos 1</li>
+                    <li>Recursos 2</li>
+                </ul>
+            </li>
+            <li>Aprendizaje
+                <ul>
+                    <li>Actividad 1</li>
+                    <li>Actividad 2</li>
+                </ul>
+            </li>
+            <li>Acerca de
+                <h4>
+                    Jhonathan J. Gómez Noreña
+                </h4>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <h2> Propósito del Sitio:</h2>
+        <p>
+            El propósito del sitio es aprender y fomentar el uso de las herramientas de Flex Box y las Listas
+            y enlaces en HTML, utilizando el software Visual Studio Code. Los Flex Box son para: Diseños flexibles y menos código,
+            alinear los elementos y reordenar contenido. Las Listas en HTML nos permite crear conjuntos de elementos en 
+            forma de lista dentro de una página, todos los cuales irán precedidos, generalmente, por un guión o número. Los tipos de 
+            listas en HTML son los siguientes: Listas ordenadas. Listas desordenadas.
+        </p>
+
+        <article>
+            <h3>Definición de Flex Box:</h3>
+            <p>
+                El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que 
+                pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. Lo que nos permite es 
+                crear un conjunto de elementos flexibles que se adaptan automáticamente a su contenedor y con el que podemos controlar parámetros 
+                tales como la alineación, dirección (horizontal/vertical), ajuste de la fila según tamaños y multitud de posibilidades.
+                Flexbox es actualmente compatible con los navegadores web más importantes y diferentes versiones de los mismos, si bien en algunos 
+                debemos utilizar prefijos css para su buen funcionamiento.
+                <p>
+                    Elementos 
+                    <br>
+                    Flexbox es un módulo completo y no una propiedad única; algunos de ellos deben declararse en el contenedor (el elemento principal, 
+                    que llamamos de flex container), mientras que otros deben declararse en los elementos secundarios (el flex ítems). Si el diseño 
+                    "estándar" se basa en las direcciones block e inline, el diseño Flex se basa en direcciones de "flex flow". A continuación, se 
+                    muestra un diagrama de la especificación, que explica la idea central detrás del diseño Flex.
+                </p>
+              <img src="img/elementos.jpg" alt="Imagen de un Flexbox">                
+                <p>
+                    Los ítems se distribuirán en el diseño siguiendo el eje principal o transversal. <br>
+                •	Eje principal: el eje principal de un flex container es el eje primario y a lo largo de él son insertados los flex ítems. 
+                Precaución: El eje principal no es necesariamente horizontal; Dependerá de la propiedad flex-direction. <br>
+                •	Main-start | main-end: los flex ítems se insertan en el contenedor empezando por el lado start, dirigiéndose hacia el lado 
+                end. <br>
+                •	Tamaño principal: El ancho o alto de un flex ítem, dependiendo de la dirección del contenedor, es el tamaño principal del 
+                ítem. La propiedad de tamaño principal de un flex ítem puede ser tanto width como height, dependiendo de cuál esté en la dirección 
+                principal. <br>
+                •	Eje transversal: El eje perpendicular al eje principal se llama eje transversal. Su dirección depende de la dirección del 
+                eje principal. <br>
+                •	Cross-start | cross-end: Líneas flex se llenan con ítems y se agregan al contenedor, comenzando desde el lado cross start 
+                del flex container hacia el lado cross end. <br>
+                •	Cross size: El ancho o alto de un flex ítem, dependiendo de lo que haya en la dimensión transversal, es el cross size del 
+                ítem. La propiedad cross size puede ser el ancho o el alto del ítem, lo que se encuentre en la transversal.
+                </p>
+                
+                <p>
+                    Flex container es el elemento que involucra su estructura. Tu defines que un elemento es un Flex Container con la propiedad 
+                display y valores flex o inline-flex.
+                <img src="img/container1.jpg" alt="Flex Container"> <br>
+                Flex Ítem son elementos secundarios del flex container.
+                </p>
+                
+                <p>
+                    Ejes o Axes son las dos direcciones básicas que existen en un Flex Container: main axis, o eje principal, y cross axis, o eje 
+                transversal.
+                Hay ciertas cosas con las que tener cuidado, como por ejemplo que hoy no todos los navegadores soportan contenedores Flex. 
+                Aunque es cierto que la gran mayoría de los navegadores que usamos diariamente ya lo soportan, no obstante, hay que tener 
+                cuidado porque no todos los navegadores de los móviles lo soportan.
+                Incluso Twitter y su librería Bootstrap ya empieza a utilizar Flex, lo cual nos indica que ya es algo totalmente aceptado como 
+                estándar y que podemos utilizar está técnica con total tranquilidad para llegar a más del 90% de todos los dispositivos.
+                </p>            
+
+              </p>
+        </article>
+        <article>
+            <h3>
+                Listas HTML 
+            </h3>
+                <p>
+                    Las listas en HTML nos permiten crear conjuntos de elementos en forma de lista dentro de una página, todos los cuales irán 
+                    precedidos, generalmente, por un guión o número.
+                    Los tipos de listas en HTML son los siguientes: <br>
+                    •	Listas ordenadas: Las listas en HTML ordenadas son aquellas que nos muestran los elementos de la lista en orden. Para 
+                    representar el orden tendremos los elementos numerados. Es decir, cada uno de los elementos irá precedido de un número o 
+                    letra que establezca su orden. <br>
+                    •	Listas desordenadas: Las listas desordenadas en HTML nos sirven para mostrar los elementos sin ningún tipo de orden, 
+                    simplemente precedidos por una viñeta que puede ser un punto, un cuadrado, … <br>
+                    •	Listas de definiciones: Las listas en HTML de definiciones en HTML nos sirven para montar listas en las que tenemos la 
+                    estructura valor y definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien pueden ser 
+                    cualquier par valor-definición.
+                </p>
+                <h3>
+                    Enlaces HTML 
+                </h3>
+                <p>
+                    Lo más importante de los documentos HTML son los enlaces. Ya que mediante los enlaces en HTML podemos comunicar una página 
+                    con otra. De esta forma, enlazando documentos HTML podemos acabar tejiendo lo que es Internet.
+                    Para crear un enlace en HTML utilizamos el elemento A con la siguiente sintaxis:
+                    <a>Contenido del enlace</a>
+                    Pero solo con esto el enlace no tendrá mucha utilidad ya que el principal objetivo del enlace es enlazar a un destino. 
+                    Para poder indicar el destino de un enlace utilizamos el atributo href. En valor del atributo href puede ser cualquier URI 
+                    que represente un recurso. Es decir, una página, una parte de una página, una URL genérica, un archivo, … De esta forma el 
+                    enlace en HTML lo crearemos con la sintaxis:
+                    <img src="img/sintaxis.jpg" alt="Sintaxis del Enlaces"> <br>                   
+                </p>
+                <p>
+                    A modo de ejemplo podríamos tener los siguientes enlaces:
+                    <img src="img/enlaces.jpg" alt="Enlaces"> <br>
+                </p>
+                <p>
+                    Los enlaces por defecto y si no hemos configurado nada en el navegador web que estemos utilizando el enlace se abre en la 
+                    misma ventana en la que tengamos el enlace. Si bien, en el enlace, podemos indicar el destino que queremos darle a dicho 
+                    enlace. Eso lo podemos hacer mediante el atributo target. Los posibles valores que admite el atributo target son: <br>
+                    •	_blank, el agente de usuario intentará abrir el enlace en una nueva ventana. La nueva ventana no tendrá nombre. <br>
+                    •	_self, el agente de usuario intentará abrir el enlace en el mismo marco donde está en código actual. <br>
+                    •	_parent, el agente de usuario intentará abrir el enlace en el frameset inmediatamente superior al que se encuentra la 
+                    página. Esto suele suceder cuando tenemos el enlace en un área de frames. <br>
+                    •	_top, el agente de usuario intentará abrir el enlace en la ventana padre. En el caso de que exista un frameset lo 
+                    eliminará y se hará con toda la ventana. <br>
+                    •	nombre_marco, se podrá indicar el nombre de un frame. En este caso el agente de usuario intentará abrir el enlace en el 
+                    frame que coincida con el nombre. En el caso de no existir un frame con ese nombre lo abrirá en una nueva ventana, 
+                    asignándole dicho nombre.
+                </p>
+                <p>
+                    Así podremos tener el siguiente código: <br>
+                 <img src="img/codigo.jpg" alt="Código"> <br>
+                </p>
+                <h3>
+                    Referencias bibliográficas
+                </h3>
+                <p>
+                    Martinez. J (2017). Flexbox CSS3. Tutorial en español. Descripción y ejemplos HTML. Blog yunbit. 
+                    https://www.yunbitsoftware.com/blog/ <br>
+                    Amoasei. J (2001). Flexbox CSS: Guia Completo, Elementos y Ejemplos. Alura Latam. 
+                    https://www.aluracursos.com/blog/flexbox-css-guia-completo-elementos-y-ejemplos <br>
+                    Pérez. J (2019). Qué es FlexBox: Conceptos básicos. Open Webinars. https://openwebinars.net/ <br>
+                    Manual Web (2021). Tutorial Html. Manual web. https://www.manualweb.net/
+                </p>
+                </article>
+                <h2> 
+                    Mockup:               
+                </h2>
+                <img src="img/Mockup.jpg" alt="Mockup">
+    </section>
+
+    <footer>
+        <p> Correo Eletrónico: jjgomezn@unadvirtual.edu.co</p>
+        <p> Fecha de Actualización: Junio del 2022</p>
+    </footer>
+    
+</body>
+</html>
