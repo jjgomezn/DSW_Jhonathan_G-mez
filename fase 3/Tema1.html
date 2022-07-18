@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASE3</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>DESCUBRIENDO: FLEX BOX, LISTAS Y ENLACES EN HTML</h1>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li> <a href="index.html">Inicio</a></li>
+            <li> <a href="#">Temas</a>
+                <ul>
+                    <li> <a href="Tema1.html">Flex Box</a></li>
+                    <li> <a href="Tema2.html">Listas y enlaces en HTML</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Recursos</a>
+                <ul>
+                    <li> <a href="Recurso1.html">Recursos 1</a></li>
+                    <li> <a href="Reurso2.html">Recursos 2</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Aprendizaje</a>
+                <ul>
+                    <li> <a href="Aprendizaje1.html">Aprendizaje 1</a></li>
+                    <li> <a href="Aprendizaje2.html">Aprendizaje 2</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Autor</a>
+                <ul>
+                    <li> <a href="Autor.html">Autor</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h3>Definición de Flex Box:</h3>
+                <p>
+                    El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional
+                    de layout, y como un método que
+                    pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de
+                    alineación. Lo que nos permite es
+                    crear un conjunto de elementos flexibles que se adaptan automáticamente a su contenedor y con el
+                    que podemos controlar parámetros
+                    tales como la alineación, dirección (horizontal/vertical), ajuste de la fila según tamaños y
+                    multitud de posibilidades.
+                    Flexbox es actualmente compatible con los navegadores web más importantes y diferentes versiones de
+                    los mismos, si bien en algunos
+                    debemos utilizar prefijos css para su buen funcionamiento.
+                <p>
+                    Elementos
+                    <br>
+                    Flexbox es un módulo completo y no una propiedad única; algunos de ellos deben declararse en el
+                    contenedor (el elemento principal,
+                    que llamamos de flex container), mientras que otros deben declararse en los elementos secundarios
+                    (el flex ítems). Si el diseño
+                    "estándar" se basa en las direcciones block e inline, el diseño Flex se basa en direcciones de "flex
+                    flow". A continuación, se
+                    muestra un diagrama de la especificación, que explica la idea central detrás del diseño Flex.
+                </p>
+                <img src="img/elementos.jpg" alt="Imagen de un Flexbox">
+                <p>
+                    Los ítems se distribuirán en el diseño siguiendo el eje principal o transversal. <br>
+                    • Eje principal: el eje principal de un flex container es el eje primario y a lo largo de él son
+                    insertados los flex ítems.
+                    Precaución: El eje principal no es necesariamente horizontal; Dependerá de la propiedad
+                    flex-direction. <br>
+                    • Main-start | main-end: los flex ítems se insertan en el contenedor empezando por el lado start,
+                    dirigiéndose hacia el lado
+                    end. <br>
+                    • Tamaño principal: El ancho o alto de un flex ítem, dependiendo de la dirección del contenedor, es
+                    el tamaño principal del
+                    ítem. La propiedad de tamaño principal de un flex ítem puede ser tanto width como height,
+                    dependiendo de cuál esté en la dirección
+                    principal. <br>
+                    • Eje transversal: El eje perpendicular al eje principal se llama eje transversal. Su dirección
+                    depende de la dirección del
+                    eje principal. <br>
+                    • Cross-start | cross-end: Líneas flex se llenan con ítems y se agregan al contenedor, comenzando
+                    desde el lado cross start
+                    del flex container hacia el lado cross end. <br>
+                    • Cross size: El ancho o alto de un flex ítem, dependiendo de lo que haya en la dimensión
+                    transversal, es el cross size del
+                    ítem. La propiedad cross size puede ser el ancho o el alto del ítem, lo que se encuentre en la
+                    transversal.
+                </p>
+
+                <p>
+                    Flex container es el elemento que involucra su estructura. Tu defines que un elemento es un Flex
+                    Container con la propiedad
+                    display y valores flex o inline-flex.
+                    <img src="img/container1.jpg" alt="Flex Container"> <br>
+                    Flex Ítem son elementos secundarios del flex container.
+                </p>
+
+                <p>
+                    Ejes o Axes son las dos direcciones básicas que existen en un Flex Container: main axis, o eje
+                    principal, y cross axis, o eje
+                    transversal.
+                    Hay ciertas cosas con las que tener cuidado, como por ejemplo que hoy no todos los navegadores
+                    soportan contenedores Flex.
+                    Aunque es cierto que la gran mayoría de los navegadores que usamos diariamente ya lo soportan, no
+                    obstante, hay que tener
+                    cuidado porque no todos los navegadores de los móviles lo soportan.
+                    Incluso Twitter y su librería Bootstrap ya empieza a utilizar Flex, lo cual nos indica que ya es
+                    algo totalmente aceptado como
+                    estándar y que podemos utilizar está técnica con total tranquilidad para llegar a más del 90% de
+                    todos los dispositivos.
+                </p>
+
+                </p>
+                <p>
+                <h3>
+                    Referencias bibliográficas
+                </h3>
+                <p>
+                    Martinez. J (2017). Flexbox CSS3. Tutorial en español. Descripción y ejemplos HTML. Blog yunbit.
+                    https://www.yunbitsoftware.com/blog/ <br>
+                    Amoasei. J (2001). Flexbox CSS: Guia Completo, Elementos y Ejemplos. Alura Latam.
+                    https://www.aluracursos.com/blog/flexbox-css-guia-completo-elementos-y-ejemplos <br>
+                    Pérez. J (2019). Qué es FlexBox: Conceptos básicos. Open Webinars. https://openwebinars.net/ <br>
+                    Manual Web (2021). Tutorial Html. Manual web. https://www.manualweb.net/
+                </p>
+                </p>
+
+            </article>
+        </section>
+        <aside>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <br>
+            <br>
+        </aside>
+    </main>
+    <footer>
+        <p> Correo Eletrónico: jjgomezn@unadvirtual.edu.co</p>
+        <p> Fecha de Actualización: Julio del 2022</p>
+    </footer>
+
+</body>
+
+</html>
