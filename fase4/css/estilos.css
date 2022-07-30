@@ -1,9 +1,7 @@
 header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #8FBDD3;
-    padding: 20px;
 
 }
 nav{
@@ -74,11 +72,4 @@ main{
 
 .menu li ul li ul{
     right: 140px;
-}
-
-@media screen and (max-width:600px){
-    header {
-        flex-direction: column;
-    }
-    
 }

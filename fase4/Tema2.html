@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASE3</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/descarga.png" alt="Logo sitio" height="100px" width="200px">
+        <h1>DESCUBRIENDO: FLEX BOX, LISTAS Y ENLACES EN HTML</h1>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li> <a href="index.html">Inicio</a></li>
+            <li> <a href="#">Temas</a>
+                <ul>
+                    <li> <a href="Tema1.html">Flex Box</a></li>
+                    <li> <a href="Tema2.html">Listas y enlaces en HTML</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Recursos</a>
+                <ul>
+                    <li> <a href="Recurso1.html">Recursos 1</a></li>
+                    <li> <a href="Reurso2.html">Recursos 2</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Aprendizaje</a>
+                <ul>
+                    <li> <a href="Aprendizaje1.html">Aprendizaje 1</a></li>
+                    <li> <a href="Aprendizaje2.html">Aprendizaje 2</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Autor</a>
+                <ul>
+                    <li> <a href="Autor.html">Autor</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h3>
+                    Listas HTML
+                </h3>
+                <p>
+                    Las listas en HTML nos permiten crear conjuntos de elementos en forma de lista dentro de una página,
+                    todos los cuales irán
+                    precedidos, generalmente, por un guión o número.
+                    Los tipos de listas en HTML son los siguientes: <br>
+                    • Listas ordenadas: Las listas en HTML ordenadas son aquellas que nos muestran los elementos de la
+                    lista en orden. Para
+                    representar el orden tendremos los elementos numerados. Es decir, cada uno de los elementos irá
+                    precedido de un número o
+                    letra que establezca su orden. <br>
+                    • Listas desordenadas: Las listas desordenadas en HTML nos sirven para mostrar los elementos sin
+                    ningún tipo de orden,
+                    simplemente precedidos por una viñeta que puede ser un punto, un cuadrado, … <br>
+                    • Listas de definiciones: Las listas en HTML de definiciones en HTML nos sirven para montar listas
+                    en las que tenemos la
+                    estructura valor y definición. Suelen ser listas para definir términos, como si fuese un
+                    diccionario, si bien pueden ser
+                    cualquier par valor-definición.
+                </p>
+                <h3>
+                    Enlaces HTML
+                </h3>
+                <p>
+                    Lo más importante de los documentos HTML son los enlaces. Ya que mediante los enlaces en HTML
+                    podemos comunicar una página
+                    con otra. De esta forma, enlazando documentos HTML podemos acabar tejiendo lo que es Internet.
+                    Para crear un enlace en HTML utilizamos el elemento A con la siguiente sintaxis:
+                    <a>Contenido del enlace</a>
+                    Pero solo con esto el enlace no tendrá mucha utilidad ya que el principal objetivo del enlace es
+                    enlazar a un destino.
+                    Para poder indicar el destino de un enlace utilizamos el atributo href. En valor del atributo href
+                    puede ser cualquier URI
+                    que represente un recurso. Es decir, una página, una parte de una página, una URL genérica, un
+                    archivo, … De esta forma el
+                    enlace en HTML lo crearemos con la sintaxis:
+                    <img src="img/sintaxis.jpg" alt="Sintaxis del Enlaces"> <br>
+                </p>
+                <p>
+                    A modo de ejemplo podríamos tener los siguientes enlaces: <br><br>
+                    <img src="img/enlaces.jpg" alt="Enlaces"> <br>
+                </p>
+                <p>
+                    Los enlaces por defecto y si no hemos configurado nada en el navegador web que estemos utilizando el
+                    enlace se abre en la
+                    misma ventana en la que tengamos el enlace. Si bien, en el enlace, podemos indicar el destino que
+                    queremos darle a dicho
+                    enlace. Eso lo podemos hacer mediante el atributo target. Los posibles valores que admite el
+                    atributo target son: <br>
+                    • _blank, el agente de usuario intentará abrir el enlace en una nueva ventana. La nueva ventana no
+                    tendrá nombre. <br>
+                    • _self, el agente de usuario intentará abrir el enlace en el mismo marco donde está en código
+                    actual. <br>
+                    • _parent, el agente de usuario intentará abrir el enlace en el frameset inmediatamente superior al
+                    que se encuentra la
+                    página. Esto suele suceder cuando tenemos el enlace en un área de frames. <br>
+                    • _top, el agente de usuario intentará abrir el enlace en la ventana padre. En el caso de que exista
+                    un frameset lo
+                    eliminará y se hará con toda la ventana. <br>
+                    • nombre_marco, se podrá indicar el nombre de un frame. En este caso el agente de usuario intentará
+                    abrir el enlace en el
+                    frame que coincida con el nombre. En el caso de no existir un frame con ese nombre lo abrirá en una
+                    nueva ventana,
+                    asignándole dicho nombre.
+                </p>
+                <p>
+                    Así podremos tener el siguiente código: <br>
+                    <img src="img/codigo.jpg" alt="Código"> <br>
+                </p>
+                <p>
+                <h3>
+                    Referencias bibliográficas
+                </h3>
+                <p>
+                    Martinez. J (2017). Flexbox CSS3. Tutorial en español. Descripción y ejemplos HTML. Blog yunbit.
+                    https://www.yunbitsoftware.com/blog/ <br>
+                    Amoasei. J (2001). Flexbox CSS: Guia Completo, Elementos y Ejemplos. Alura Latam.
+                    https://www.aluracursos.com/blog/flexbox-css-guia-completo-elementos-y-ejemplos <br>
+                    Pérez. J (2019). Qué es FlexBox: Conceptos básicos. Open Webinars. https://openwebinars.net/ <br>
+                    Manual Web (2021). Tutorial Html. Manual web. https://www.manualweb.net/
+                </p>
+                </p>
+
+            </article>
+        </section>
+        <aside>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <br>
+            <br>
+        </aside>
+    </main>
+    <footer>
+        <p> Correo Eletrónico: jjgomezn@unadvirtual.edu.co</p>
+        <p> Fecha de Actualización: Julio del 2022</p>
+    </footer>
+
+</body>
+
+</html>
